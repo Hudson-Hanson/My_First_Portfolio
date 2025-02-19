@@ -1,0 +1,37 @@
+/* Apply flexbox to body and main */
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Ensure header, main, and footer take full width */
+header, footer {
+    background-color: lightgray;
+    padding: 10px;
+    text-align: center;
+}
+
+/* Main section as a flex container */
+main {
+    display: flex;
+    flex-direction: row; /* Arrange article & aside in a row */
+    flex: auto; /* Allows it to grow */
+}
+
+/* Article takes 3/4 of the width */
+article {
+    flex: 2;
+    padding: 20px;
+    background-color: lightblue;
+    overflow-y: auto;
+}
+
+/* Aside takes 1/4 of the width */
+aside {
+    flex: 1;
+    padding: 20px;
+    background-color: lightcoral;
+    overflow-y: auto;
+}
